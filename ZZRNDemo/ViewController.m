@@ -7,6 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "React01.h"
+#import "React02.h"
+#import "React03.h"
+#import "React04.h"
+
 
 @interface ViewController ()
 
@@ -20,9 +25,23 @@
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)jumpToVC:(UIButton *)sender {
+    switch (sender.tag) {
+        case 1:
+            [self.navigationController pushViewController:[React01 new] animated:true];
+            break;
+        case 2:
+            [self.navigationController pushViewController:[React02 new] animated:true];
+            break;
+        case 3:
+            [self.navigationController pushViewController:[React03 new] animated:true];
+            break;
+        case 4:
+            [self.navigationController pushViewController:[React04 new] animated:true];
+            break;
+        default:
+            break;
+    }
 }
 
 
