@@ -16,6 +16,8 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
+*.xccheckout
+*.xcworkspace
 
 ## Other
 *.moved-aside
@@ -27,6 +29,9 @@ xcuserdata/
 *.ipa
 *.dSYM.zip
 *.dSYM
+
+## React Native
+node_modules/
 
 # CocoaPods
 #
