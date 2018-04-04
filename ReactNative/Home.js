@@ -32,7 +32,7 @@ class Blink extends Component {
   }
 }
 
-export default class ZZRNDemo extends Component {
+export default class Home extends Component {
 
   render() {
     let pic = {
@@ -76,4 +76,4 @@ const styles = StyleSheet.create({
   }
 });
 
-AppRegistry.registerComponent('ZZRNDemo', () => ZZRNDemo);
+AppRegistry.registerComponent('ZZRNDemo', () => Home);

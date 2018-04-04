@@ -20,5 +20,10 @@
     
 }
 
+- (NSString *)jsName {
+    return @"List";
+}
+
+
 
 @end

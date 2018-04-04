@@ -30,7 +30,7 @@ class MyImage extends Component {
   }
 }
 
-export default class ZZRNDemo extends Component {
+export default class Main extends Component {
 
   render() {
     let pic = {
@@ -42,7 +42,7 @@ export default class ZZRNDemo extends Component {
             Welcome to React Native!
         </Text>
         <Text>
-            哈哈哈哈!
+            哈哈aa哈哈!
         </Text>
         <Image source={pic} style={styles.banners} />
         <Greeting name='Rexxar' />
@@ -76,4 +76,4 @@ const styles = StyleSheet.create({
   }
 });
 
-AppRegistry.registerComponent('ZZRNDemo', () => ZZRNDemo);
+AppRegistry.registerComponent('ZZRNDemo', () => Main);

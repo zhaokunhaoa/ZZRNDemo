@@ -20,4 +20,9 @@
     
 }
 
+- (NSString *)jsName {
+    return @"Me";
+}
+
+
 @end

@@ -4,47 +4,32 @@ import {
   StyleSheet,
   Text,
   View,
-  Image
+  Image,
+  TextInput
 } from 'react-native';
 
-export default class ZZRNDemo extends Component {
+
+class Me extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {text: ''};
+  }
 
   render() {
-    let pic = {
-      uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
-    };
     return (
-    	<View style={styles.container}>
-    		<Text>
-          	Welcome!
+      <View style={{padding: 10}}>
+        <TextInput
+          style={{height: 40, top:200, backgroundColor:'red' }}
+          placeholder="Type here to translate!"
+          onChangeText={(text) => this.setState({text})}
+        />
+        <Text style={{padding: 10, fontSize: 42}}>
+          {this.state.text.split(' ').map((word) => word && '🍕').join(' ')}
         </Text>
-    	</View>
+
+      </View>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-  banners: {
-    width: 193, 
-    height: 110,
-    margin: 20
-  }
-});
-
-AppRegistry.registerComponent('ZZRNDemo', () => ZZRNDemo);
+AppRegistry.registerComponent('ZZRNDemo', () => Me);

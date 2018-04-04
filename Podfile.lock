@@ -7,6 +7,8 @@ PODS:
   - React/jschelpers (0.44.3)
   - React/RCTActionSheet (0.44.3):
     - React/Core
+  - React/RCTAnimation (0.44.3):
+    - React/Core
   - React/RCTGeolocation (0.44.3):
     - React/Core
   - React/RCTImage (0.44.3):
@@ -29,6 +31,7 @@ PODS:
 DEPENDENCIES:
   - React/Core (from `./ReactNative/node_modules/react-native`)
   - React/RCTActionSheet (from `./ReactNative/node_modules/react-native`)
+  - React/RCTAnimation (from `./ReactNative/node_modules/react-native`)
   - React/RCTGeolocation (from `./ReactNative/node_modules/react-native`)
   - React/RCTImage (from `./ReactNative/node_modules/react-native`)
   - React/RCTNetwork (from `./ReactNative/node_modules/react-native`)
@@ -49,6 +52,6 @@ SPEC CHECKSUMS:
   React: e53535491f7b382b8cd681428dd853159bf25545
   Yoga: f2b1f5b59fadb774a3dd9932a7cf813c6e284d71
 
-PODFILE CHECKSUM: a5495351105f28c0ecbcafb6722941d99a4611f9
+PODFILE CHECKSUM: 7352a9bf7292ff6f433e55a0d8426acdf9c59e7e
 
 COCOAPODS: 1.4.0

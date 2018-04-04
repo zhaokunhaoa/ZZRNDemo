@@ -19,6 +19,7 @@ pod 'React', :path => './ReactNative/node_modules/react-native', :subspecs => [
 'RCTText',
 'RCTVibration',
 'RCTWebSocket',
+'RCTAnimation',
 ]
 
 

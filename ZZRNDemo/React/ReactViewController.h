@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ReactViewController : UIViewController
-
+@property (nonatomic, copy) NSString *jsName;
 @end

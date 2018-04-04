@@ -19,7 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString * strUrl = @"http://localhost:8081/Main.bundle?platform=ios&dev=true";
+    NSString * strUrl = [NSString stringWithFormat:@"http://localhost:8081/%@.bundle?platform=ios&dev=true", self.jsName];
+    
     NSURL * jsCodeLocation = [NSURL URLWithString:strUrl];
     
     RCTRootView * rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation

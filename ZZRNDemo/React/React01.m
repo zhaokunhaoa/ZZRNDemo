@@ -20,5 +20,9 @@
     
 }
 
+- (NSString *)jsName {
+    return @"Main";
+}
+
 
 @end
