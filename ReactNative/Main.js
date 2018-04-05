@@ -38,15 +38,17 @@ export default class Main extends Component {
     };
     return (
       <View style={styles.container}>
-        <Text>
+        <View style={styles.container2}>
+          <Image source={pic} style={styles.banners} />
+          <Text>
             Welcome to React Native!
-        </Text>
-        <Text>
+          </Text>
+          <Text>
             哈哈aa哈哈!
-        </Text>
-        <Image source={pic} style={styles.banners} />
+          </Text>
+        </View>
         <Greeting name='Rexxar' />
-        <MyImage url='https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg' />
+          <MyImage url='https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg' />
       </View>
     );
   }
@@ -55,9 +57,17 @@ export default class Main extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#228cea',
+  },
+  container2: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#173052',
   },
   welcome: {
     fontSize: 20,

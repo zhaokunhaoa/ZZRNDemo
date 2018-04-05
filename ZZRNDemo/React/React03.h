@@ -2,8 +2,8 @@
 //  React03.h
 //  NamiboxRN
 //
-//  Created by 相颖 on 2018/4/4.
-//  Copyright © 2018年 相颖. All rights reserved.
+//  Created by zhaokun on 2018/4/4.
+//  Copyright © 2018年 zhaokun. All rights reserved.
 //
 
 #import "ReactViewController.h"

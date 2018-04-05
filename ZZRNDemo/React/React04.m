@@ -2,7 +2,7 @@
 //  React04.m
 //  ZZRNDemo
 //
-//  Created by 相颖 on 2018/4/4.
+//  Created by zhaokun on 2018/4/4.
 //  Copyright © 2018年 kun. All rights reserved.
 //
 
@@ -21,7 +21,7 @@
 }
 
 - (NSString *)jsName {
-    return @"List";
+    return @"List3";
 }
 
 

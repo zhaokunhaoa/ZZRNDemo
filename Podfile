@@ -10,6 +10,7 @@ target 'ZZRNDemo' do
 pod "Yoga", :path => "./ReactNative/node_modules/react-native/ReactCommon/yoga"
 pod 'React', :path => './ReactNative/node_modules/react-native', :subspecs => [
 'Core',
+'DevSupport',
 'RCTActionSheet',
 'RCTGeolocation',
 'RCTImage',
