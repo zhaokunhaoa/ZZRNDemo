@@ -58,15 +58,45 @@
                                     <constraint firstAttribute="width" constant="100" id="SjE-uQ-LKq"/>
                                 </constraints>
                             </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qEt-AK-c2f">
+                                <rect key="frame" x="112.5" y="462" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="NeK-bf-2iv"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aw4-lZ-hn7">
+                                <rect key="frame" x="157" y="537" width="60" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="8Q5-WH-lfd"/>
+                                    <constraint firstAttribute="height" constant="40" id="vO6-Pj-EjQ"/>
+                                </constraints>
+                                <state key="normal" title="jump">
+                                    <color key="titleColor" red="0.56353854503055945" green="0.57791425383683537" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="jumpJS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8dz-yb-vgI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="qEt-AK-c2f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4dL-Ex-W8C"/>
                             <constraint firstItem="KaX-1F-2gZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Fpg-hu-eFi"/>
+                            <constraint firstItem="aw4-lZ-hn7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RPd-1n-Jud"/>
+                            <constraint firstItem="qEt-AK-c2f" firstAttribute="top" secondItem="KaX-1F-2gZ" secondAttribute="bottom" constant="30" id="Voa-k3-BAb"/>
+                            <constraint firstItem="aw4-lZ-hn7" firstAttribute="top" secondItem="qEt-AK-c2f" secondAttribute="bottom" constant="45" id="VtZ-jZ-bdv"/>
                             <constraint firstItem="KaX-1F-2gZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mOx-B5-CeZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Vj4-Yw-Mv4"/>
+                    <connections>
+                        <outlet property="jsTextField" destination="qEt-AK-c2f" id="42s-aI-Nku"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

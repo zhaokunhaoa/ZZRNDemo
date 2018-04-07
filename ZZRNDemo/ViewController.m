@@ -14,6 +14,7 @@
 
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *jsTextField;
 
 @end
 
@@ -43,6 +44,13 @@
             break;
     }
 }
+
+- (IBAction)jumpJS:(UIButton *)sender {
+    ReactViewController *reactVC = [ReactViewController new];
+    reactVC.jsName = self.jsTextField.text;
+    [self.navigationController pushViewController:reactVC animated:true];
+}
+
 
 
 @end

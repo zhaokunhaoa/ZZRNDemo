@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <React/RCTRootView.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    
+    NSString * strUrl = [NSString stringWithFormat:@"http://localhost:8081/Components/App.bundle?platform=ios&dev=true"];
+
+    NSURL * jsCodeLocation = [NSURL URLWithString:strUrl];
+
+    RCTRootView * rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
+                                                         moduleName:@"ZZRNDemo"
+                                                  initialProperties:nil
+                                                      launchOptions:nil];
+    UIViewController *vc = [UIViewController new];
+    vc.view = rootView;
+    self.window.rootViewController = vc;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
